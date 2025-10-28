@@ -58,3 +58,6 @@ class BankAccount:
         for date, type_, amount, balance in self.transactions:
             print(f"{date} : {type_} : {amount} : {balance}")
         print(40 * "-")
+    def check_pin(self):
+        if not self.pin:
+            print("Not a valid pin number")
