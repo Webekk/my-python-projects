@@ -52,4 +52,4 @@ def checkNumberInDict(number):
     else:
         print(f"The key {number} is not in the dictionary")
 
-checkNumberInDict(10)
+checkNumberInDict(9)
