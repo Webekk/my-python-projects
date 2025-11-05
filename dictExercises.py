@@ -58,3 +58,36 @@ checkNumberInDict(9)
 
 for k, v in dic1.items():  # k stands for key and v stands for value
     print(f"The key {k} : value {v}")
+
+#  Generate Dictionary of Numbers and Their Squares
+
+# (My solution) Creating the dict outside function and using update to manipulate it
+def create_squareDictionary(number,square_dictionary):
+    for i in range(1,number + 1):
+        square_dictionary.update({i : i * i})
+
+    return f"This is my take on a solution: {square_dictionary}"
+
+"""The solutions are nearly the same but this one is less elegant
+   I came up with idea for it and i feel super proud about my progress
+"""
+
+testDictionary = {}
+
+result_of_dictionary_squares = create_squareDictionary(20,testDictionary)
+print(result_of_dictionary_squares)
+
+print("--------------------------------------------------------------")
+# Optimizing the solution, using one parameter and making the dictionarie inside the function
+
+def optimized_squareDict(number):
+    dictionary = {}
+    for i in range(1, number + 1):
+        dictionary[i] = i * i
+    return f"This is an optimized solution: {dictionary}"
+square_dictionary = optimized_squareDict(20)
+print(square_dictionary)
+
+# I like this solution a lot more, i'm not using an external dict but i'm creating a new one inside the method
+# This allows me to manipulate it better and prompt the solution for given number a lot quicker without need of
+# Creating a new dictionaries outside the body of a function
