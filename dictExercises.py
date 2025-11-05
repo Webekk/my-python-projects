@@ -53,3 +53,8 @@ def checkNumberInDict(number):
         print(f"The key {number} is not in the dictionary")
 
 checkNumberInDict(9)
+
+# 5. Iterate Over Dictionary Using For Loops
+
+for k, v in dic1.items():  # k stands for key and v stands for value
+    print(f"The key {k} : value {v}")
