@@ -104,4 +104,43 @@ def one_to_fifteen():
 result = one_to_fifteen() # Need to put this in to variable so we can print it out as we want to
 print(result)
 
+# 8. Merge Two Python Dictionaries
 
+merged_dictionaries = result | dic1 # That's a quick way to do it but lacks modularity in my opinion
+# Keys from 1 to 10 share the same key
+#so they are overwritten by dic1 dictionary
+print(f"These are the 2 merged dictioanries {merged_dictionaries}")
+
+# for x in merged_dictionaries: # printing all the keys
+#     print(f"Key: {x}", end = " ")
+#     print(f"Value: {merged_dictionaries[x]}") # That is actually good but i can do that with one simple for loop
+
+
+for k, v in merged_dictionaries.items():
+    print(f"Key: {k}, Value: {v}")
+
+
+sum_of_dictionarie = sum(merged_dictionaries.values()) # Everytime I want to sum some values i can use sum() function
+print("First solution: ",sum_of_dictionarie)
+
+values = 0
+values2 = 0
+sample_dictionary = {
+    "first" : 130,
+    "second" : 2,
+    "third" : 24
+}
+for v in sample_dictionary.values():
+
+      values += v
+print(f"Iterative way of summing the values from the dictionary: {values}")
+
+
+for v in merged_dictionaries.values():
+    values2 += v
+
+print(values2)
+
+# Yeah, I had problems with this one
+    # thought there's a problem with merged dictionaries
+    # but that was only a problem with my logic
