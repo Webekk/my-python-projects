@@ -91,3 +91,17 @@ print(square_dictionary)
 # I like this solution a lot more, i'm not using an external dict but i'm creating a new one inside the method
 # This allows me to manipulate it better and prompt the solution for given number a lot quicker without need of
 # Creating a new dictionaries outside the body of a function
+
+# Dictionary with Keys 1 to 15 and Their Squares
+
+def one_to_fifteen():
+    dictionary = {}
+    for i in range(1, 16): # including a range from 1 to 15
+        dictionary[i] = i ** 2
+
+    return dictionary
+
+result = one_to_fifteen() # Need to put this in to variable so we can print it out as we want to
+print(result)
+
+
