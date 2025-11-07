@@ -194,3 +194,11 @@ class DictObj(object):
 
 dictObj = DictObj()
 print(dictObj.__dict__)
+
+# 18. Check if a Dictionary is Empty
+empty_dictionary = {1:"23"}
+
+if not bool(empty_dictionary):
+    print("Empty dictionary")
+else:
+    print(empty_dictionary)
