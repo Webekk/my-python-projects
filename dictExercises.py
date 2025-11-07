@@ -1,3 +1,5 @@
+import collections
+
 # 2. Add Key to Dictionary
 sampleDict = {
     "first" : 130,
@@ -113,7 +115,8 @@ print(f"These are the 2 merged dictioanries {merged_dictionaries}")
 
 # for x in merged_dictionaries: # printing all the keys
 #     print(f"Key: {x}", end = " ")
-#     print(f"Value: {merged_dictionaries[x]}") # That is actually good but i can do that with one simple for loop
+#     print(f"Value: {merged_dictionaries[x]}")
+# That is actually good but i can do that with one simple for loop
 
 
 for k, v in merged_dictionaries.items():
@@ -144,3 +147,50 @@ print(values2)
 # Yeah, I had problems with this one
     # thought there's a problem with merged dictionaries
     # but that was only a problem with my logic
+
+del merged_dictionaries[2]
+print(merged_dictionaries)
+
+multiply_score = 1 # Made a wrong base case on this one, it's logical that if you multiply by 0 it's always gonna be a zero so it's better to leave 1 to let it manage the calculations
+for v in sampleDict.values():
+    multiply_score *= v
+
+print(multiply_score)
+
+list1 = [10,2,1,2,3,4,5]
+list2 = ["Hank", "Walter", "Jesse"]
+
+breaking_bad_dictionary = dict(zip(list1, list2))
+
+
+
+print(f"Before sorting by key: {breaking_bad_dictionary}")
+# Sorting dictionary by key
+
+od = collections.OrderedDict(sorted(breaking_bad_dictionary.items()))
+
+# And now my sorted by key dict is inside the "od" variable and now I can access the sorted key by simply calling the variable
+# like here
+print(f"After sorting by key: {od}")
+
+for k, v in od.items():
+    print(f"Key: {k}, Value: {v}")
+
+#Get minimum and maximum values from a dictionary
+
+print(max(breaking_bad_dictionary.values()))
+print(min(breaking_bad_dictionary.values()))
+
+# 16. Get Dictionary from an Object's Fields
+
+class DictObj(object):
+    def __init__(self):
+        self.x = "red"
+        self.y = "yellow"
+        self.z=  "blue"
+
+    def nothing(self):
+        pass
+
+dictObj = DictObj()
+print(dictObj.__dict__)
