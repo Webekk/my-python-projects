@@ -1,4 +1,5 @@
 import bankaccount
+from Car import Honda, Driver
 from Character import Hero, Enemy
 from bankaccount import BankAccount
 from weapon import short_bow, iron_sword
@@ -39,5 +40,18 @@ for temperature in cels_temp:
     fahr_temp.append(fahrenheit)
 
 print(fahr_temp)
+
+
+honda = Honda("Honda", "CHR", "2002", "Blue", True)
+honda.honk()
+honda.car_info()
+
+
+dakar_driver = Driver("Jan", "Kowalski", 18,
+                     "Male", "Intermediate", False,)
+
+dakar_driver.is_legal_to_drive()
+
+
 
 
