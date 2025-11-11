@@ -111,7 +111,7 @@ squares = [n * n for n in numbers]
 print(numbers)
 print(squares)
 
-my_list = [1, 2, 3, 'Jessa', 4, 5, 'Kelly', 'Jhon', 6]
+my_list = [1, 2, 3, 'Jessa', 4, 5, 'Kelly', 'John', 6]
 only_numbers_list = [numbers for numbers in my_list if isinstance(numbers, (int, float)) ]
 print(only_numbers_list)
 

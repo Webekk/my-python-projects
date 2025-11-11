@@ -6,7 +6,6 @@ class Character:
     def __init__(self,
                  name: str,
                  health: int,
-
                  ) -> None:
         self.name = name
         self.health = health
@@ -27,7 +26,7 @@ class Hero(Character):
                  ) -> None:
         super().__init__(name=name, health=health)
 
-        self.defaultweapon = self.weapon
+        self.defaultWeapon = self.weapon
 
     def equip(self, weapon) -> None:
         self.weapon = weapon
@@ -35,7 +34,7 @@ class Hero(Character):
 
     def drop(self) -> None:
         print(f"{self.name} dropped {self.weapon}")
-        self.weapon = self.defaultweapon
+        self.weapon = self.defaultWeapon
 
 
 class Enemy(Character):

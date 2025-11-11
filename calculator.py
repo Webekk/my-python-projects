@@ -25,28 +25,31 @@ def main():
                 add_result1 = float(input("Enter your first number: "))
                 add_result2 = float(input("Enter your second number: "))
                 result = add(add_result1, add_result2)
-                print(f"The result is: {result}")
+                print(f"The result is: {add_result1} + {add_result2} = {result}")
 
         elif user_decision == "-":
                 subtract_variable1 = float(input("Enter your first number: "))
                 subtract_variable2 = float(input("Enter your second number: "))
                 result = subtract(subtract_variable1, subtract_variable2)
-                print(result)
+                print(f"The result is: {subtract_variable1} - {subtract_variable2} = {result}")
 
         elif user_decision == "*":
                 multiply_variable1 = float(input("Enter your first number: "))
-                multiply_result2 = float(input("Enter your second number: "))
-                result = multiply(multiply_variable1, multiply_result2)
-                print(result)
+                multiply_variable2 = float(input("Enter your second number: "))
+                result = multiply(multiply_variable1, multiply_variable2)
+                print(f"The result is: {multiply_variable1} * {multiply_variable2} = {result}")
 
         elif user_decision == "/":
-                division_result1 = float(input("Enter your first number: "))
-                division_result2 = float(input("Enter your second number: "))
-                result = divide(division_result1, division_result2)
-                print(result)
+                division_variable1 = float(input("Enter your first number: "))
+                division_variable2 = float(input("Enter your second number: "))
+                result = divide(division_variable1, division_variable2)
+                print(f"The result is: {division_variable1} / {division_variable2} = {result}")
 
         elif user_decision.lower() == "q":
             print("Thank you for using calculator")
             break
         else:
             print("Invalid input, please try again")
+
+if __name__ == "__main__":
+    main()
