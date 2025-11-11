@@ -199,6 +199,6 @@ print(dictObj.__dict__)
 empty_dictionary = {1:"23"}
 
 if not bool(empty_dictionary):
-    print("Empty dictionary")
+    print('Empty dictionary')
 else:
     print(empty_dictionary)
