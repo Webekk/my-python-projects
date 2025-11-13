@@ -22,10 +22,10 @@ def main():
         user_decision = input("Your choice: ")
 
         if user_decision == "+":
-                add_result1 = float(input("Enter your first number: "))
-                add_result2 = float(input("Enter your second number: "))
-                result = add(add_result1, add_result2)
-                print(f"The result is: {add_result1} + {add_result2} = {result}")
+                add_variable1 = float(input("Enter your first number: "))
+                add_variable2 = float(input("Enter your second number: "))
+                result = add(add_variable1, add_variable2)
+                print(f"The result is: {add_variable1} + {add_variable2} = {result}")
 
         elif user_decision == "-":
                 subtract_variable1 = float(input("Enter your first number: "))
