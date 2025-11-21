@@ -1,3 +1,5 @@
+# Here is the link for the password generator
+# https://www.geeksforgeeks.org/python/create-a-random-password-generator-using-python/
 import string
 import random
 
