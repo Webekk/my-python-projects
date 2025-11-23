@@ -12,7 +12,7 @@ soup = BeautifulSoup(movies_url, 'lxml')
 if os.path.exists("movies.txt"):
     with open("movies.txt", "r") as f:
         for line in f:
-            title = line.strip().split(". ", 1)[-1]   # usuwa numer "1. Film"
+            title = line.strip().split(". ", 1)[-1]   # gets rid of the number in the movies.txt file
             used_movies.append(title)
 
 
@@ -24,8 +24,6 @@ for upcoming_premiere in upcoming_premieres:
     movie_name = upcoming_premiere.text.strip()
     if movie_name not in list_of_movies:
         list_of_movies.append(upcoming_premiere.text.strip())
-    # print(f"{upcoming_premiere.text} został dodany do listy")
-    # print(list_of_movies)
     counter += 1
 
 #Deleting the films we already watched!
