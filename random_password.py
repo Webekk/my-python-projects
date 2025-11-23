@@ -27,14 +27,17 @@ while True:
 
         # Adding letters to possible characters
         characterList += string.ascii_letters
+        print(characterList)
     elif choice == 2:
 
         # Adding digits to possible characters
         characterList += string.digits
+        print(characterList)
     elif choice == 3:
 
         # Adding special characters to possible characters
         characterList += string.punctuation
+        print(characterList)
     elif choice == 4:
         break
     else:
@@ -55,6 +58,6 @@ with open("passwords.txt", "a") as file:
     file.write("\n")
 
 with open("passwords.txt", "r") as file:
-    print("Here are all the passwords")
+    print("Here are all the passwords: ")
     print(file.read())
 
