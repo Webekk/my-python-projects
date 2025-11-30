@@ -1,15 +1,21 @@
+from datetime import date
 import requests
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
-
 day = input("Enter a day for nasa picture of the day: (DD) ")
 month = input("Enter a month for nasa picture of the day: (MM) ")
 year = input("Enter a year for nasa picture of the day: (YYYY) ")
 
-formatted_Date = f"{year}-{month}-{day}"
+if day and month and year:
+    # Such a goated method, just adds a zero at the beginning, help with formatting
+    formatted_Date = f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+else:
+    today = date.today()
+    formatted_Date = today.strftime("%Y-%m-%d")
+
 
 url = "https://api.nasa.gov/planetary/apod"
 api_key = os.getenv("NASA_API_KEY")
