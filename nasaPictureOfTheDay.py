@@ -9,10 +9,12 @@ def nasa_web_api_call(photo_date):
     """A method to call the NASA Web API
     Used to acquire a photo of the day from NASA
 
-    :param photo_date: The date of the photo from NASA
+    :param
+    photo_date: The date of the photo from NASA
     Has to be formatted as YYYY-MM-DD
 
-    :return: A JSON Object from the NASA Web API
+    :return:
+    A JSON Object from the NASA Web API
     By default, this method will return photo from the current day
     """
 
