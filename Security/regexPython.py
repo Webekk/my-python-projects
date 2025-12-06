@@ -1,6 +1,6 @@
 import re
 
-sample_text = "Email@example.com,Email@example.com,Email@subdomain.example.com,firstname+lastname@example.com,Email@123.123.123.123,Email@[123.123.123.123],\"Email\"@example.com"
+sample_text = "email@example.com,email@example.com,email@subdomain.example.com,firstname+lastname@example.com,email@123.123.123.123,email@[123.123.123.123],\"email\"@example.com"
 
 
 #               username           @     mail       .   com or whatever (require unleast 2 letters)
