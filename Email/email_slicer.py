@@ -1,4 +1,4 @@
-email = input("Enter your email: ")
+email = input("Enter your Email: ")
 
 
 

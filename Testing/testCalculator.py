@@ -1,5 +1,5 @@
 import pytest
-import calculator
+from Everyday_Use import calculator
 
 
 class TestCalculator:

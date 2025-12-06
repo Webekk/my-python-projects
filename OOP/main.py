@@ -1,9 +1,7 @@
-import bankaccount
-from Car import Honda, Driver
-from Character import Hero, Enemy
-from bankaccount import BankAccount
+from OOP.Car import Honda, Driver
+from OOP.Character import Hero, Enemy
 from weapon import short_bow, iron_sword
-from Bank import Bank
+from Banking import Bank
 
 hero = Hero(name="Hero", health=100)
 hero.equip(iron_sword)
