@@ -1,4 +1,5 @@
-from Bank.bankaccount import BankAccount
+from Banking import bankaccount
+from Banking.bankaccount import BankAccount
 
 
 class Bank:

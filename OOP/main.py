@@ -19,7 +19,7 @@ while False:
 
     input()
 client_accounts = []
-bank = Bank("ING BANK SLASKI", account_id=1)
+bank = Bank()
 first_customer = bank.create_account( "2222555533334444", "Jan Kowalski", "1232")
 client_accounts.append(first_customer)
 for clients in client_accounts:
